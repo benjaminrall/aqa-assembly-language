@@ -1,0 +1,50 @@
+// R0 => Length of list
+// R1 => Length of list - 1
+// R2 => i
+// R3 => j
+// R4 => j + 1
+// R5 => list[j]
+// R6 => list[j + 1]
+
+// Setting up Registers
+IN R0
+MOV R1, #0
+
+// Create List from user input
+addToList:
+IN R12
+STR R12, R1
+ADD R1, R1, #1
+CMP R1, R0
+BLT addToList
+SUB R1, R1, #1
+
+// Bubble sort
+MOV R2, #0
+outerLoop:
+MOV R3, #0
+innerLoop:
+ADD R4, R3, #1
+LDR R5, R3
+LDR R6, R4
+CMP R6, R5
+BGT endInnerLoop
+STR R6, R3
+STR R5, R4
+endInnerLoop:
+ADD R3, R3, #1
+CMP R3, R1
+BLT innerLoop
+ADD R2, R2, #1
+CMP R2, R0
+BLT outerLoop
+
+// Display the list
+MOV R1, #0
+displayList:
+LDR R12, R1
+OUT R12
+ADD R1, R1, #1
+CMP R1, R0
+BLT displayList
+HALT

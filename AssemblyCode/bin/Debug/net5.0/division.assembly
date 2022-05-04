@@ -1,0 +1,75 @@
+// R1 => Input A
+// R2 => Input B
+// R3 => Output
+// R4 => Negate flag
+
+// Setting up registers
+IN R1
+IN R2
+MOV R3, #0
+MOV R4, #0
+
+// Find if first value is negative
+CMP R1, #0
+BEQ end
+BGT aPositive
+BLT aNegative
+
+// If first value is positive, deduce the specific division case
+aPositive:
+CMP R2, #0
+BEQ end
+BGT loop
+BLT case2
+
+// If first value is negative, deduce the specific division case
+aNegative:
+CMP R2, #0
+BEQ end
+BGT case3
+BLT case4
+
+// Case 2: A is positive, B is negative => Flip B, Negate at the end
+case2:
+MOV R4, #1
+MOV R5, R2
+SUB R2, R2, R5
+SUB R2, R2, R5
+B loop
+
+// Case 3: A is negative, B is positive => Flip A, Negate at the end
+case3:
+MOV R4, #1
+MOV R5, R1
+SUB R1, R1, R5
+SUB R1, R1, R5
+B loop
+
+// Case 4: A is negative, B is negative => Flip A and B
+case4:
+MOV R5, R1
+SUB R1, R1, R5
+SUB R1, R1, R5
+MOV R5, R2
+SUB R2, R2, R5
+SUB R2, R2, R5
+
+// Main division loop using repeated subtraction
+loop:
+CMP R1, R2
+BLT stop
+SUB R1, R1, R2
+ADD R3, R3, #1
+B loop
+
+// Negate ending value if necessary
+stop:
+CMP R4, #0
+BEQ end
+MOV R5, R3
+SUB R3, R3, R5
+SUB R3, R3, R5
+
+end:
+OUT R3
+HALT
