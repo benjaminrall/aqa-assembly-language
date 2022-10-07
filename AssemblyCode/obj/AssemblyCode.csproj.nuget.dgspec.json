@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ben\\OneDrive - Peter Symonds College\\Desktop\\Coding\\C#\\AssemblyCode\\AssemblyCode\\AssemblyCode.csproj": {}
+    "C:\\Users\\Ben\\OneDrive - Peter Symonds College\\Desktop\\Coding\\C#\\assembly-code\\AssemblyCode\\AssemblyCode.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ben\\OneDrive - Peter Symonds College\\Desktop\\Coding\\C#\\AssemblyCode\\AssemblyCode\\AssemblyCode.csproj": {
+    "C:\\Users\\Ben\\OneDrive - Peter Symonds College\\Desktop\\Coding\\C#\\assembly-code\\AssemblyCode\\AssemblyCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ben\\OneDrive - Peter Symonds College\\Desktop\\Coding\\C#\\AssemblyCode\\AssemblyCode\\AssemblyCode.csproj",
+        "projectUniqueName": "C:\\Users\\Ben\\OneDrive - Peter Symonds College\\Desktop\\Coding\\C#\\assembly-code\\AssemblyCode\\AssemblyCode.csproj",
         "projectName": "AssemblyCode",
-        "projectPath": "C:\\Users\\Ben\\OneDrive - Peter Symonds College\\Desktop\\Coding\\C#\\AssemblyCode\\AssemblyCode\\AssemblyCode.csproj",
+        "projectPath": "C:\\Users\\Ben\\OneDrive - Peter Symonds College\\Desktop\\Coding\\C#\\assembly-code\\AssemblyCode\\AssemblyCode.csproj",
         "packagesPath": "C:\\Users\\Ben\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ben\\OneDrive - Peter Symonds College\\Desktop\\Coding\\C#\\AssemblyCode\\AssemblyCode\\obj\\",
+        "outputPath": "C:\\Users\\Ben\\OneDrive - Peter Symonds College\\Desktop\\Coding\\C#\\assembly-code\\AssemblyCode\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ben\\AppData\\Roaming\\NuGet\\NuGet.Config",
