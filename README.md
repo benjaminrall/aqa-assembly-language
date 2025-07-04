@@ -17,4 +17,4 @@ Alternatively, a script path can be specified as a command line argument. For ex
 dotnet run --project AssemblyCode examples/sort.assembly
 ```
 
-There are three example programs provided [here](./examples)
+There are three example programs provided [here](./examples).
