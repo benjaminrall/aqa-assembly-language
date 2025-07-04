@@ -9,7 +9,8 @@ The project can be run from the main directory using the following command:
 ```
 > dotnet run --project AssemblyCode
 ```
-This will start an interactive environment, which prompts the user for a path to an assembly script.
+This will start an interactive environment, which continuously prompts the user for a path to an assembly script until they choose to exit.
+
 
 Alternatively, a script path can be specified as a command line argument. For example:
 ```
