@@ -31,4 +31,4 @@ dotnet run --project AssemblyCode examples/sort.assembly
 Three example programs are provided in the [`./examples`](./examples) directory to demonstrate the interpreter's functionality.
 
 ## License
-This project is licensed under the **MIT License**. See the `LICENSE` file for details.
+This project is licensed under the **MIT License**. See the [`LICENSE`](./LICENSE) file for details.
