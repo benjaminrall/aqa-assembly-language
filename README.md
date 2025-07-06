@@ -7,7 +7,7 @@ Specification details can be found [here](https://pmt.physicsandmathstutor.com/d
 
 The project can be run from the main directory using the following command:
 ```
-> dotnet run --project AssemblyCode
+dotnet run --project AssemblyCode
 ```
 This will start an interactive environment, which continuously prompts the user for a path to an assembly script until they choose to exit.
 
