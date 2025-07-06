@@ -14,7 +14,7 @@ A virtual environment and interpreter built in C# to execute programs written us
 First, clone the repository:
 ```sh
 git clone https://github.com/benjaminrall/aqa-assembly-language.git
-cd aqa-assembly-language
+cd aqa-assembly-interpreter
 ```
 
 The project can then be run from the main directory using the following command:
